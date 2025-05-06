@@ -41,9 +41,17 @@ const HeroSection = () => {
                 Start a Project
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button size="lg" variant="outline" className="text-base px-8">
-                Our Services
-              </Button>
+  <Button
+    size="lg"
+    variant="outline"
+    className="text-base px-8"
+    onClick={() => {
+      const section = document.getElementById("about");
+      section?.scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Our Services
+  </Button>
             </div>
 
             <div className="mt-12 flex items-center space-x-4">
