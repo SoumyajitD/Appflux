@@ -15,7 +15,29 @@ const HeroSection = () => {
               AppFlux is your partner for creating stunning applications and websites with a focus on user experience and modern technologies.
             </p>
             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-              <Button size="lg" className="text-base px-8">
+              <Button
+                size="lg"
+                className="text-base px-8"
+                onClick={() => {
+                  const subject = encodeURIComponent("New Project Requirement");
+                  const body = encodeURIComponent(
+                    "Hello AppFlux Team,\n\n" +
+                    "I'm interested in starting a new project with your team. Here are the details:\n\n" +
+                    "Project Name: \n" +
+                    "Project Type: [Web/Mobile/Desktop]\n" +
+                    "Project Description: \n\n" +
+                    "Timeline: \n" +
+                    "Budget Range: \n\n" +
+                    "Additional Requirements: \n\n" +
+                    "Contact Information:\n" +
+                    "Name: \n" +
+                    "Phone: \n\n" +
+                    "Looking forward to your response.\n\n" +
+                    "Best Regards,"
+                  );
+                  window.location.href = `mailto:support@appflux.in?subject=${subject}&body=${body}`;
+                }}
+              >
                 Start a Project
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -23,7 +45,7 @@ const HeroSection = () => {
                 Our Services
               </Button>
             </div>
-            
+
             <div className="mt-12 flex items-center space-x-4">
               <span className="text-gray-500">Trusted by leading companies</span>
               <div className="flex space-x-6">
@@ -33,7 +55,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="lg:w-1/2 mt-12 lg:mt-0 flex justify-center lg:justify-end animate-fade-in animation-delay-200">
             <div className="relative w-full max-w-lg">
               <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
@@ -80,7 +102,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-wave-pattern bg-bottom bg-repeat-x"></div>
     </section>
   );

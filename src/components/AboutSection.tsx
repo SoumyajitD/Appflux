@@ -11,26 +11,26 @@ const AboutSection = () => {
             <h2 className="text-3xl font-bold mb-4">About AppFlux</h2>
             <div className="w-20 h-1 bg-blue-500 mb-6"></div>
             <p className="text-gray-600 text-lg mb-6">
-              AppFlux is a forward-thinking technology company founded in 2015. We specialize in creating exceptional digital experiences through innovative web and mobile applications.
+              AppFlux is a forward-thinking technology company founded in 2024. We specialize in creating exceptional digital experiences through innovative web and mobile applications.
             </p>
             <p className="text-gray-600 text-lg mb-6">
               Our team of experienced developers, designers, and strategists work collaboratively to transform your ideas into reality. We combine technical expertise with creative thinking to deliver solutions that drive business growth.
             </p>
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div>
-                <div className="text-3xl font-bold text-blue-500">200+</div>
+                <div className="text-3xl font-bold text-blue-500">10+</div>
                 <p className="text-gray-600">Projects Completed</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-500">50+</div>
+                <div className="text-3xl font-bold text-blue-500">30+</div>
                 <p className="text-gray-600">Happy Clients</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-500">15+</div>
+                <div className="text-3xl font-bold text-blue-500">5+</div>
                 <p className="text-gray-600">Team Members</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-500">8+</div>
+                <div className="text-3xl font-bold text-blue-500">5+</div>
                 <p className="text-gray-600">Years Experience</p>
               </div>
             </div>
