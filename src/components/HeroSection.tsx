@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Code, Smartphone, Monitor } from 'lucide-react';
 
@@ -46,7 +45,7 @@ const HeroSection = () => {
     variant="outline"
     className="text-base px-8"
     onClick={() => {
-      const section = document.getElementById("about");
+      const section = document.getElementById("services");
       section?.scrollIntoView({ behavior: "smooth" });
     }}
   >
